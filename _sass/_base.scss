@@ -242,11 +242,16 @@ header {
     }
 }
 
+
 .portfolio-box {
     position: relative;
     display: block;
-    max-width: 250px;
+    text-align: center;
+    min-width: 100px;
+    max-width: 160px;
     margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(209,178,128,.1);
     .portfolio-box-caption {
         color: white;
         opacity: 0;
