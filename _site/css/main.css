@@ -190,7 +190,7 @@ div.text-content p.tm-name { font-size: 12px; padding-top: 45px; margin: 0; }
 
 div.text-content p.tm-description { font-size: 10px; }
 
-ul.img-list { list-style-type: none; margin: 0; padding: 0; text-align: center; }
+ul.img-list { list-style-type: none; padding: 0; text-align: center; vertical-align: top; position: relative; }
 
 ul.img-list li { border-radius: 50%; height: 140px; width: 140px; display: inline-block; margin: 20px; position: relative; background-color: rgba(209, 178, 128, 0.1); }
 
