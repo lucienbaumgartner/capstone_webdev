@@ -77,6 +77,7 @@ header .header-content .header-content-inner p { font-weight: 300; color: rgba(2
 .portfolio-box:active .portfolio-box-caption { opacity: 1; }
 @media (min-width: 768px) { .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category { font-size: 12px; }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name { font-size: 16px; } }
+@media screen and (max-width: 650px) { .portfolio-box .portfolio-box { width: 100%; display: block; } }
 
 .call-to-action h2 { margin: 0 auto 20px; }
 
@@ -165,3 +166,32 @@ ul:hover li a { color: #eee; }
 ul li:hover a { color: #222; text-decoration: none; }
 
 input:focus, textarea { outline: none !important; }
+
+/* Three columns side by side */
+.column { float: left; width: 20%; margin-bottom: 16px; padding: 0 8px; }
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) { .column { width: 100%; display: block; text-align: center; } }
+.jeff { text-align: center; }
+
+/* Some left and right padding inside the container */
+.container { padding: 0 16px; }
+
+/* Clear floats */
+.container::after, .row::after { content: ""; clear: both; display: table; }
+
+.rounded { border-radius: 50%; }
+
+div.text-content { display: table-cell; text-align: center; }
+
+div.text-content { border-radius: 60%; background: rgba(192, 178, 131, 0.8); color: white; cursor: pointer; display: table; left: 0; position: absolute; top: 0; bottom: 0; opacity: 0; height: inherit; width: inherit; -webkit-transition: opacity 500ms; -moz-transition: opacity 500ms; -o-transition: opacity 500ms; transition: opacity 500ms; }
+
+div.text-content p.tm-name { font-size: 12px; padding-top: 45px; margin: 0; }
+
+div.text-content p.tm-description { font-size: 10px; }
+
+ul.img-list { list-style-type: none; margin: 0; padding: 0; text-align: center; }
+
+ul.img-list li { border-radius: 50%; height: 140px; width: 140px; display: inline-block; margin: 20px; position: relative; background-color: rgba(209, 178, 128, 0.1); }
+
+ul.img-list li:hover div.text-content { opacity: 1; }
