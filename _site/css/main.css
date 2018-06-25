@@ -23,7 +23,7 @@ section { padding: 0; }
 
 aside { padding: 50px 0; }
 
-.article-format { padding: 70px 30px !important; text-align: justify; }
+.article-format { padding: 70px 30px 30px 30px !important; text-align: justify; }
 
 .addendum-format { padding: 70px 30px !important; }
 
@@ -163,7 +163,9 @@ body { -webkit-tap-highlight-color: #222; }
 
 .read-more-wrap { position: relative; width: 100%; padding: 5%; background: rgba(209, 178, 128, 0.2); border: 1px solid white; border-radius: .25em; }
 
-.tooltip-container { float: left; width: 60%; margin-right: 10px; margin-bottom: -10px; }
+.tooltip-container-left { float: left; width: 60%; margin-right: 10px; margin-bottom: -10px; }
+
+.tooltip-container-right { float: right; width: 60%; margin-left: 10px; margin-bottom: -10px; }
 
 .img-portfolio { border-radius: 50%; }
 
