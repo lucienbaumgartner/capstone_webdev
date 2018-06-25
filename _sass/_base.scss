@@ -548,12 +548,13 @@ body {
 .p-tooltip + .tooltip > .tooltip-inner {
   background-color: $theme-primary;
   max-width: 300px;
-  text-align: justify;
+  text-align: left;
+  padding: 10px;
 }
 
 .tooltip.in{
   opacity:1!important;
-  font-size: 90%;
+  font-size: 70%;
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 

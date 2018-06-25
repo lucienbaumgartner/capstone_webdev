@@ -171,9 +171,9 @@ body { -webkit-tap-highlight-color: #222; }
 
 .dropdown-menu > li > a:hover { filter: brightness(95%); padding-left: -50px; position: relative; }
 
-.p-tooltip + .tooltip > .tooltip-inner { background-color: #C0B283; max-width: 300px; text-align: justify; }
+.p-tooltip + .tooltip > .tooltip-inner { background-color: #C0B283; max-width: 300px; text-align: left; padding: 10px; }
 
-.tooltip.in { opacity: 1 !important; font-size: 90%; font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+.tooltip.in { opacity: 1 !important; font-size: 70%; font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
 
 .help { cursor: help; }
 
