@@ -397,16 +397,22 @@ body {
 .smaller-image { width: 200px; }
 
 .sidebar-box {
-  width: 80%;
-  margin: 0 auto;
-  height: 160px;
+  display:inline-block;
+  width: 50%;
+  margin: 10px 20px;
+  height: 250px;
+  float: left;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
 }
 
 .sidebar-box {
   max-height: 500px;
   position: relative;
-  padding: 0;
-  overflow: hidden;
+  border: 1px solid white;
+  border-radius: 1%;
+  background: rgba( $theme-primary, .2);
+  padding: 10px;
 }
 .sidebar-box .read-more {
   position: absolute;
@@ -414,11 +420,8 @@ body {
   width: 100%;
   text-align: center;
   margin: 0;
-  padding: 30px 0 30px 0;
+  padding: 30px 0 10px 0;
 
-  /* "transparent" only works here because == rgba(0,0,0,0) */
-  background-image: -moz-linear-gradient(top, transparent, black);
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, black));
 }
 
 .white {
@@ -439,6 +442,11 @@ body {
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(244,244,244,0)),color-stop(1, rgba(244,244,244,100)));
 }
 
+.gold .read-more {
+  background-image: -moz-linear-gradient(top, rgba( $theme-primary, 0), rgba( $theme-primary, .5));
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba( $theme-primary, 0)),color-stop(1, rgba( $theme-primary, .5)));
+}
+
 .button {
    background: none;
    padding: 5px 10px;
@@ -457,7 +465,7 @@ body {
 }
 
 .victim-snippet {
-  color: lightgrey;
+  color: darkgrey;
   font-size: 100%;
 }
 
@@ -470,6 +478,58 @@ body {
 .victim-name::first-letter {
   font-size: 150%;
 }
+
+
+.read-more-state {
+  display: none;
+}
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Read more';
+}
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  color: #666;
+  font-size: .9em;
+  line-height: 1;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  margin-bottom: 12px;
+}
+
+.read-more-wrap {
+  position: relative;
+  width: 100%;
+  padding: 2%;
+  background: rgba(209,178,128,.2);
+  border: 1px solid white;
+  border-radius: .25em;
+}
+
+
+.lala {
+  float: left;
+  width:50%;
+  margin-right: 10px;
+  margin-bottom: -10px;
+}
+
 
 .img-portfolio{
   border-radius: 50%;
