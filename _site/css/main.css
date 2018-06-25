@@ -161,9 +161,9 @@ body { -webkit-tap-highlight-color: #222; }
 
 .read-more-trigger { cursor: pointer; display: inline-block; position: relative; padding: 5px; color: #666; font-size: .9em; line-height: 1; border: 1px solid #ddd; border-radius: .25em; margin-bottom: 12px; }
 
-.read-more-wrap { position: relative; width: 100%; padding: 2%; background: rgba(209, 178, 128, 0.2); border: 1px solid white; border-radius: .25em; }
+.read-more-wrap { position: relative; width: 100%; padding: 5%; background: rgba(209, 178, 128, 0.2); border: 1px solid white; border-radius: .25em; }
 
-.lala { float: left; width: 50%; margin-right: 10px; margin-bottom: -10px; }
+.tooltip-container { float: left; width: 60%; margin-right: 10px; margin-bottom: -10px; }
 
 .img-portfolio { border-radius: 50%; }
 
