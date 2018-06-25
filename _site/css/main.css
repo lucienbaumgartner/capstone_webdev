@@ -157,6 +157,8 @@ body { -webkit-tap-highlight-color: #222; }
 
 .tooltip.in { opacity: 1 !important; font-size: 90%; font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
 
+.help { cursor: help; }
+
 ul { list-style-type: none; padding-left: 0; }
 
 li a { color: #F4F4F4; opacity: 50%; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; }
