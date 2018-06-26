@@ -1,6 +1,11 @@
 @font-face {
-  font-family: "Crimson Text";
-  src: url("../fonts/Alegreya/Crimson_Text-Regular.ttf") format('truetype');
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../fonts/Roboto/Roboto-Thin.ttf") format('truetype');
 }
 
 
@@ -12,7 +17,7 @@ body {
 }
 
 body {
-    font-family: "Crimson Text" !important;
+    font-family: "Roboto" !important;
 }
 
 hr {
@@ -197,13 +202,15 @@ header {
                 color: #F4F4F4;
             }
             hr {
-                margin: 30px auto;
+                margin: 30px auto 70px auto;
             }
             p {
                 font-weight: 300;
                 color: rgba(white, .7);
                 font-size: 16px;
                 margin-bottom: 50px;
+                font-family: "Roboto Light";
+                text-align: justify !important;
             }
         }
     }
@@ -221,10 +228,12 @@ header {
                 margin-left: auto;
                 margin-right: auto;
                 p {
-                    font-size: 18px;
+                    font-size: 20px;
                     max-width: 80%;
                     margin-left: auto;
                     margin-right: auto;
+                    font-family: "Roboto Light";
+                    text-align: justify !important;
                 }
             }
         }

@@ -1,7 +1,8 @@
-@font-face { font-family: "Crimson Text"; src: url("../fonts/Alegreya/Crimson_Text-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Roboto"; src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Roboto Light"; src: url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype"); }
 html, body { height: 100%; width: 100%; background-color: #F4F4F4; }
 
-body { font-family: "Crimson Text" !important; }
+body { font-family: "Roboto" !important; }
 
 hr { border-color: #C0B283; border-width: 3px; max-width: 50px; }
 
@@ -55,12 +56,12 @@ aside { padding: 50px 0; }
 header { position: relative; width: 100%; min-height: auto; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; background-position: center; background-image: url("../img/header.jpg"); text-align: center; color: white; }
 header .header-content { position: relative; text-align: center; padding: 100px 15px 100px; width: 100%; }
 header .header-content .header-content-inner h1 { font-weight: 700; text-transform: uppercase; margin-top: 0; margin-bottom: 0; color: #F4F4F4; }
-header .header-content .header-content-inner hr { margin: 30px auto; }
-header .header-content .header-content-inner p { font-weight: 300; color: rgba(255, 255, 255, 0.7); font-size: 16px; margin-bottom: 50px; }
+header .header-content .header-content-inner hr { margin: 30px auto 70px auto; }
+header .header-content .header-content-inner p { font-weight: 300; color: rgba(255, 255, 255, 0.7); font-size: 16px; margin-bottom: 50px; font-family: "Roboto Light"; text-align: justify !important; }
 @media (min-width: 768px) { header { min-height: 100%; }
   header .header-content { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); padding: 0 50px; }
   header .header-content .header-content-inner { max-width: 1000px; margin-left: auto; margin-right: auto; }
-  header .header-content .header-content-inner p { font-size: 18px; max-width: 80%; margin-left: auto; margin-right: auto; } }
+  header .header-content .header-content-inner p { font-size: 20px; max-width: 80%; margin-left: auto; margin-right: auto; font-family: "Roboto Light"; text-align: justify !important; } }
 
 .section-heading { margin-top: 0; }
 
