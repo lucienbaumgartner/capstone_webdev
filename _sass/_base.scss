@@ -104,6 +104,7 @@ aside {
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
+    width: 100%;
     .navbar-header .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
