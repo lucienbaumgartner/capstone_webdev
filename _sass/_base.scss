@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Crimson Text";
+  src: url("../fonts/Alegreya/Crimson_Text-Regular.ttf") format('truetype');
+}
+
+
 html,
 body {
     height: 100%;
@@ -6,7 +12,7 @@ body {
 }
 
 body {
-    @include serif-font;
+    font-family: "Crimson Text" !important;
 }
 
 hr {
@@ -38,7 +44,7 @@ h6 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -411,7 +417,7 @@ body {
   position: relative;
   border: 1px solid white;
   border-radius: 1%;
-  background: rgba( $theme-primary, .2);
+  background: rgba( $theme-primary, .1);
   padding: 10px;
 }
 .sidebar-box .read-more {
@@ -470,7 +476,7 @@ body {
 }
 
 .victim-name {
-  color: lightgrey;
+  color: $theme-primary;
   font-size: 120%;
   margin-bottom: -2px;
 }
@@ -496,10 +502,13 @@ body {
 }
 .read-more-state ~ .read-more-trigger:before {
   content: 'Read more';
+  height: 100%;
 }
 .read-more-state:checked ~ .read-more-trigger:before {
   content: 'Show less';
+  height:100%S
 }
+
 .read-more-trigger {
   cursor: pointer;
   display: inline-block;
@@ -515,9 +524,10 @@ body {
 
 .read-more-wrap {
   position: relative;
+  display: inline-block;
   width: 100%;
   padding: 5%;
-  background: rgba(209,178,128,.2);
+  background: rgba(209,178,128,.1);
   border: 1px solid white;
   border-radius: .25em;
 }
@@ -536,6 +546,8 @@ body {
   margin-left: 10px;
   margin-bottom: -10px;
 }
+
+
 
 
 .img-portfolio{

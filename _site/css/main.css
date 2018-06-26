@@ -1,6 +1,7 @@
+@font-face { font-family: "Crimson Text"; src: url("../fonts/Alegreya/Crimson_Text-Regular.ttf") format("truetype"); }
 html, body { height: 100%; width: 100%; background-color: #F4F4F4; }
 
-body { font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+body { font-family: "Crimson Text" !important; }
 
 hr { border-color: #C0B283; border-width: 3px; max-width: 50px; }
 
@@ -11,7 +12,7 @@ a:hover, a:focus { color: #af9d61; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
-p { font-size: 16px; line-height: 1.5; margin-bottom: 20px; }
+p { font-size: 14px; line-height: 1.5; margin-bottom: 20px; }
 
 .bg-primary { background-color: #C0B283; }
 
@@ -123,7 +124,7 @@ body { -webkit-tap-highlight-color: #222; }
 
 .sidebar-box { display: inline-block; width: 50%; margin: 10px 20px; height: 250px; float: left; overflow: hidden !important; text-overflow: ellipsis; }
 
-.sidebar-box { max-height: 500px; position: relative; border: 1px solid white; border-radius: 1%; background: rgba(192, 178, 131, 0.2); padding: 10px; }
+.sidebar-box { max-height: 500px; position: relative; border: 1px solid white; border-radius: 1%; background: rgba(192, 178, 131, 0.1); padding: 10px; }
 
 .sidebar-box .read-more { position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; margin: 0; padding: 30px 0 10px 0; }
 
@@ -145,7 +146,7 @@ body { -webkit-tap-highlight-color: #222; }
 
 .victim-snippet { color: darkgrey; font-size: 100%; }
 
-.victim-name { color: lightgrey; font-size: 120%; margin-bottom: -2px; }
+.victim-name { color: #C0B283; font-size: 120%; margin-bottom: -2px; }
 
 .victim-name::first-letter { font-size: 150%; }
 
@@ -155,13 +156,13 @@ body { -webkit-tap-highlight-color: #222; }
 
 .read-more-state:checked ~ .read-more-wrap .read-more-target { opacity: 1; font-size: inherit; max-height: 999em; }
 
-.read-more-state ~ .read-more-trigger:before { content: 'Read more'; }
+.read-more-state ~ .read-more-trigger:before { content: 'Read more'; height: 100%; }
 
-.read-more-state:checked ~ .read-more-trigger:before { content: 'Show less'; }
+.read-more-state:checked ~ .read-more-trigger:before { content: 'Show less'; height: 100% S; }
 
 .read-more-trigger { cursor: pointer; display: inline-block; position: relative; padding: 5px; color: #666; font-size: .9em; line-height: 1; border: 1px solid #ddd; border-radius: .25em; margin-bottom: 12px; }
 
-.read-more-wrap { position: relative; width: 100%; padding: 5%; background: rgba(209, 178, 128, 0.2); border: 1px solid white; border-radius: .25em; }
+.read-more-wrap { position: relative; display: inline-block; width: 100%; padding: 5%; background: rgba(209, 178, 128, 0.1); border: 1px solid white; border-radius: .25em; }
 
 .tooltip-container-left { float: left; width: 60%; margin-right: 10px; margin-bottom: -10px; }
 
