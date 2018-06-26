@@ -711,3 +711,51 @@ ul.img-list li {
 ul.img-list li:hover div.text-content {
   opacity: 1;
 }
+
+
+
+.folded{
+    display:none;
+}
+
+.unfolded{
+    display:inline-block;
+}
+
+.unfolded p {
+  margin-top: 5px;
+  margin-bottom: -5px;
+  font-size: 75%;
+}
+
+
+.wt-button{
+  font-size:75%;
+  margin:5px 0 -5px 0;
+  display:inline-block;
+  opacity:0.6;
+}
+
+.wt-wrap-left{
+  float:left;
+  width:50%;
+  margin-right:10px;
+  padding:2%;
+  position: relative;
+  display: inline-block;
+  background: rgba(209,178,128,.1);
+  border: 1px solid white;
+  border-radius: .25em;
+}
+
+.wt-wrap-right{
+  float:right;
+  width:50%;
+  margin-left:10px;
+  padding:2%;
+  position: relative;
+  display: inline-block;
+  background: rgba(209,178,128,.1);
+  border: 1px solid white;
+  border-radius: .25em;
+}
