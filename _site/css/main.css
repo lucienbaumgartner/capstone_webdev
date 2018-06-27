@@ -1,5 +1,6 @@
 @font-face { font-family: "Roboto"; src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); }
 @font-face { font-family: "Roboto Light"; src: url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype"); }
+@font-face { font-family: "Roboto LightItalic"; src: url("../fonts/Roboto/Roboto-LightItalic.ttf") format("truetype"); }
 html, body { height: 100%; width: 100%; background-color: #F4F4F4; }
 
 body { font-family: "Roboto" !important; }
@@ -231,3 +232,11 @@ ul.img-list li:hover div.text-content { opacity: 1; }
 .wt-wrap-left { float: left; width: 50%; margin-right: 10px; padding: 2%; position: relative; display: inline-block; background: rgba(209, 178, 128, 0.1); border: 1px solid white; border-radius: .25em; }
 
 .wt-wrap-right { float: right; width: 50%; margin-left: 10px; padding: 2%; position: relative; display: inline-block; background: rgba(209, 178, 128, 0.1); border: 1px solid white; border-radius: .25em; }
+
+.quote { display: inline-block; width: 80%; font-family: "Roboto LightItalic"; font-size: 120%; }
+
+.quote-box { text-align: center; margin: 40px 0 20px 0; }
+
+.author { margin-top: -10px; padding-bottom: 15px; font-size: 90%; }
+
+.author::before, .author::after { content: "\2014"; padding: 0 5px; }
